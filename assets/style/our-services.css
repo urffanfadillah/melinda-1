@@ -1,0 +1,44 @@
+.konten {
+    padding: 48px 10% 48px 10%;     
+}
+
+.background-cream {
+    background-color: #FDF4E9;
+}
+p.fw-light {
+    line-height: 150%;
+    color: #575757;
+}
+#hero-images-homepage {
+    width: 50%;    
+    display: block;    
+}
+
+.wrapper-hero-img {
+    margin-top: -30%;
+    z-index: 998;
+    display: flex;
+    justify-content: end;    
+}
+
+.mouse {
+    width: 34px;
+}
+
+@media (max-width: 575px) {
+    .wrapper-hero-img {
+        margin-top: 0;
+        z-index: 0;
+        display: none;
+        justify-content: end;    
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .wrapper-hero-img {
+        margin-top: 0;
+        z-index: 0;
+        display: flex;
+        justify-content: end;    
+    }
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./assets/bootstrap-5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- homepagecss -->
+    <link rel="stylesheet" href="./assets/style/homepage.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" href="./index.html">Home</a>
+                    <a class="nav-link" href="./our-services.html">Our Services</a>
+                    <a class="nav-link" href="#">Our Room</a>
+                    <a class="nav-link" href="#">Gallery</a>
+                    <a class="nav-link" href="#">Links</a>
+                    <a class="btn btn-primary" href="#" role="button">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- hero -->
+    <section id="hero-homepage" class="konten container-fluid text-white">
+        <div class="row align-items-center py-5">          
+          <div class="col-md-6" id="konten-hero">
+              <span class="content-sub-title mb-1">Melinda Hospital Suite Room Balcony 1</span>
+              <h1 class="display-5 fw-bold mb-4">Large, quite and views</h1>
+              <p class="fw-light text-white">
+                  Feel the relax and sensations of staying in Melinda Hospital room suite, this room large space priorities technology and high security
+              </p>              
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 gap-3" data-bs-toggle="modal" data-bs-target="#room-tour">
+                <i class="bi bi-play-circle-fill fs-1"></i> Room Tour
+              </button>              
+          </div>
+          <div class="col-md-6" id="konten-img">
+            <img src="./assets/images/hero-images.png" class="d-lg-none img-fluid" alt="heroimages" loading="lazy" id="hero-image"/>
+          </div>          
+        </div>
+    </section>
+    <!-- konten img yang versi desktop -->
+    <div class="wrapper-hero-img">
+        <img src="./assets/images/hero-images.png" class="img-fluid" alt="heroimages" loading="lazy" id="hero-images-homepage">
+    </div>
+    <!-- Modal video roomtour -->
+    <div class="modal fade" id="room-tour" tabindex="-1" aria-labelledby="room-tour" aria-hidden="true">
+      <div class="modal-dialog modal-lg rounded">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <h5 class="modal-title fw-bold" id="room-tour-title">Room Tour</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/6sAkPJYuXUU" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- button group -->
+    <div class="container-fluid" id="button-group">
+      <div class="input-group shadow-lg gap-lg-2 flex-column flex-lg-row justify-content-center" id="booking">        
+        <div class="d-flex flex-column">
+          <label for="select-room" class="label-select-room form-label-booking">
+            <i class="bi bi-house-door-fill"></i> Select Room
+          </label>
+          <select class="input-label-booking form-select" id="select-room">
+            <option selected>Select Room</option>
+            <option value="1">Sweet Balcony 1</option>
+            <option value="2">Sweet Balcony 2</option>
+            <option value="3">Sweet Balcony 3</option>
+          </select>
+        </div>
+        <div class="d-flex flex-column">          
+          <label for="basic-url" class="form-label-booking">
+            <i class="bi bi-calendar-fill"></i> Check In
+          </label>
+          <input type="date" aria-label="First name" class="input-label-booking form-control">
+        </div>        
+        <div class="d-flex flex-column">
+          <label for="basic-url" class="form-label-booking">
+            <i class="bi bi-calendar-fill"></i> Check Out
+          </label>
+          <input type="date" aria-label="First name" class="form-control input-label-booking">
+        </div>
+        <a href="#" class="btn btn-primary align-self-stretch d-flex justify-content-center align-items-center">
+          Book & Search
+        </a>
+      </div>
+    </div>
+    <section class="konten recomendation-room">
+      <h1>
+        Recommendation Room <br>for Mothercare
+        <div class="border-bottom"></div>
+      </h1>
+      <div class="row mt-5 gap-4 gap-lg-0">
+        <div class="col-lg-4">
+          <div class="card card-room">
+            <img src="./assets/images/baby-bed.png" class="room-img card-img-top" alt="side-image">
+            <div class="card-body" style="margin-top: -78px;">
+              <h5 class="card-title">Babbies Bed</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 my-auto">
+          <a href="#" class="browse-other-room d-flex justify-content-end mb-2 link-secondary">Browse Others Room</a>
+          <img src="./assets/images/mom-room.png" class="room-img card-img-top" alt="room-img">
+          <div class="card-body" style="margin-top: -78px;">
+            <h5 class="card-title">Room Inspire for 
+              Mother & Babies</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="cream-background d-none d-md-block"></div>
+    <div class="mt-5 mt-lg-0"></div>
+    <div class="konten services py-0 py-md-5">
+      <div id="services-content" class="row align-items-end g-5 py-5">
+        <div class="col-sm-6 services-text">
+            <span class="content-sub-title mb-1">Melinda Hospital Suite Room Balcony 1</span>
+            <h1 class="content-title">Our Great Services</h1>
+            <p class="content-text">
+              Health is the main key to a woman's beauty and happiness. Melinda Hospital is sincerely committed to realizing every woman's dream to look beautiful, healthy and happy.
+            </p>              
+            <a href="./our-services.html" class="btn-services btn btn-primary rounded-pill">
+              View All Services <i class="bi bi-arrow-right-short"></i>
+            </a>
+        </div>
+        <div class="col-sm-6">
+          <img src="./assets/images/services.png" class="d-block mx-auto img-fluid" alt="Bootstrap Themes" style="width: 100%;" height="500" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <div class="konten hospital-nearby">
+      <span class="content-sub-title mb-1">Melinda Hospital Nearby</span>
+      <h1 class="content-title">Hotels</h1>
+      <div class="row gap-5 gap-md-0">
+        <div class="col-sm-4 hotel">
+          <img src="./assets/images/hotel-1.png" class="room-img card-img-top" alt="hotel-image">
+          <div class="card-body" style="margin-top: -78px;">
+            <h5 class="card-title">Novotol</h5>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <img src="./assets/images/hotel-2.png" class="room-img card-img-top" alt="hotel-image">
+          <div class="card-body" style="margin-top: -78px;">
+            <h5 class="card-title">The Palace</h5>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <img src="./assets/images/hotel-3.png" class="room-img card-img-top" alt="hotel-image">
+          <div class="card-body" style="margin-top: -78px;">
+            <h5 class="card-title">Bandung Shine</h5>
+          </div>
+        </div>
+        <a href="#" class="col-sm-12 link-secondary mt-4">
+          Browse near hotel from Melinda Hospital
+        </a>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <!-- contact -->
+        <div id="contact" class="row">
+            <div id="desc" class="col-sm-8 d-flex flex-column flex-xl-row">
+                <div class="photo-contact">
+                    <img src="./assets/images/contact.png" alt="contact" id="contact-img">
+                    <img src="./assets/images/person.png" alt="person" id="person-img">
+                </div>
+                <p>
+                    Please feel free to contact our friendly reception staff with any medical enquiry, or call (022) 4233777
+                </p>
+            </div>
+            <span id="contacts" class="col-sm-4 mt-4 mt-xl-0 d-flex align-items-center gap-3 justify-content-center">
+                <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+                <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
+                <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                <a class="btn btn-primary d-flex align-items-center gap-3" href="#">
+                    Pendaftaran <i class="bi bi-arrow-right-short fs-4"></i>
+                </a>
+           </span>
+        </div>
+        <!-- footer content -->
+        <div class="footer-konten container-fluid konten py-5 row gap-5 gap-md-0">
+          <div class="col-sm-6">
+            <img src="./assets/images/logo.png" class="logo-footer img-fluid" alt="logo-footer">
+          </div>
+          <div class="col-sm-3 footer-konten-text">
+            <span class="footer-title">Office</span>
+            <div class="my-2"></div>
+            <p>Jl.Pajajaran 46, Bandung Jawa Barat Indonesia</p>
+          </div>
+          <div class="col-sm-3 footer-konten-text">
+            <span class="footer-title">Contact</span>
+            <div class="my-2"></div>
+            <p>
+              Hunting  : (022) 4222788
+              Pendaftaran : (022) 4209088
+              Fax       : (022) 4215700
+            </p>
+          </div>
+        </div>
+        <hr class="mx-auto">
+        <div class="footer-konten container-fluid konten py-5 row gap-5 gap-md-0">
+          <div class="col-sm-6 footer-konten-text">            
+            <span class="footer-title">Our Good Services</span>
+            <div class="my-2"></div>
+            <p class="d-flex flex-column gap-1">
+              <a href="#" class="menu-map">Babycare</a>
+              <a href="#" class="menu-map">Mothercare</a>
+              <a href="#" class="menu-map">General Facility</a>
+            </p>            
+          </div>
+          <div class="col-sm-3 footer-konten-text">            
+            <span class="footer-title">For Doctors</span>
+            <div class="my-2"></div>
+            <p class="d-flex flex-column gap-1">
+              <a href="#" class="menu-map">Careers <span class="badge-career badge rounded-pill bg-primary">hiring now</span></a>
+              <a href="#" class="menu-map">Forum Doctor</a>              
+            </p>
+            <div class="my-4"></div>
+            <span class="footer-title">For Patients</span>
+            <div class="my-2"></div>
+            <p class="d-flex flex-column gap-1">
+              <a href="#" class="menu-map">Bank Appointments</a>
+              <a href="#" class="menu-map">Find a Doctor</a>              
+            </p>            
+          </div>
+          <div class="col-sm-3 footer-konten-text">
+            <span class="footer-title">Patients</span>
+            <div class="my-2"></div>
+            <p class="d-flex flex-column gap-1">
+              <a href="#" class="menu-map">Health Blogs</a>
+              <a href="#" class="menu-map">Open & Shops</a>
+              <a href="#" class="menu-map">Licenting & Terms</a>
+              <a href="#" class="menu-map">
+                Technology
+              </a>                                                        
+            </p>
+            <div class="my-4"></div>
+            <label for="subs-email" class="footer title">Subscribe Our Newsletter</label>
+            <input type="email" class="form-control" id="subs-email">
+            <a href="#" class="send-email-sub rounded-pill mt-2 btn btn-sm btn-primary">Send <i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center konten copyright">
+          <p>© 2022 RS Melinda 2, All Rights Reserved. </p>
+          <div class="d-flex gap-4">
+            <img src="./assets/images/logos-footer.png" class="copyright-logos img-fluid">
+            <a href="#" class="copyright-link">Privacy & Policy</a>
+            <a href="#" class="copyright-link">Cookies</a>
+          </div>
+        </div>
+    </footer>
+    <!-- <div class="container">
+        <footer class="row row-cols-5 py-5 my-5 border-top">
+          <div class="col">
+            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <p class="text-muted">© 2021</p>
+          </div>
+      
+          <div class="col">
+      
+          </div>
+      
+          <div class="col">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+      
+          <div class="col">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+      
+          <div class="col">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+        </footer>
+    </div> -->
+    <script src="./assets/bootstrap-5.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>

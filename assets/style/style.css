@@ -1,0 +1,195 @@
+/* ALL */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poppins', sans-serif;
+}
+a, p {
+    font-family: 'Roboto', sans-serif;
+    color: #575757;
+}
+nav {
+    padding: 40px 140px 40px 140px;
+    z-index: 1000 !important;  
+}
+
+.nav-link {
+    font-size: 14px !important;
+    font-weight: 600;
+    margin: 0 20px 0 20px;
+    color: #575757 !important;        
+}
+
+.nav-link.active {
+    color:#75C6EF !important;
+}
+
+a.navbar-brand img {
+    width: 160px;
+}
+
+.navbar-nav a.btn.btn-primary {
+    margin: 0 20px 0 20px;    
+    display: flex;
+    align-items: center;
+    color: #575757 !important;
+    font-weight: 600; 
+    background-color: #FCE8CE !important;
+    border: none;
+    border-radius: 40px;
+    font-size: 14px !important;    
+}
+
+footer #contact {
+    width: 100%;
+    padding: 48px 10% 48px 10%;    
+    justify-content: space-between;
+    background-color: #FEF8F0;
+}
+
+footer .footer-konten {
+    background-color: #ffffff !important;
+}
+
+.logo-footer {
+    max-width: 280px;
+}
+
+.footer-konten-text .footer-title {
+    font-size: 18px;
+    color: #1C4576;
+    font-weight: bolder;
+}
+
+.footer-konten-text p, .menu-map {
+    color: #1C4576;
+    font-weight: 100;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.badge-career {
+    background-color: #74C4F0 !important;
+}
+
+.send-email-sub {
+    background-color: #74C4F0;
+    border: none;
+}
+
+.send-email-sub:hover {
+    background-color: #3d8eb9;
+    border: none;
+}
+
+footer hr { width: 80%; }
+#contact #desc { display: flex; justify-content: center; align-items: center; }
+#contact #desc p { color: #1B4674; font-weight: 600; font-size: 14px; margin-bottom: 0 !important;}
+
+#contact #desc .photo-contact { display: flex; }
+#contact #desc .photo-contact img { width: 40px; }
+#contact #desc .photo-contact #contact-img {z-index: 1000;}
+#contact #desc .photo-contact #person-img {margin-left: -10px; margin-right: 20px;}
+
+span#contacts .bi-facebook { color: #4267B2; }
+span#contacts .bi-twitter { color: #1DA1F2; }
+span#contacts .bi-linkedin { color: #0072b1; }
+span#contacts .bi-instagram { color: #bc2a8d; }
+
+.konten {
+    padding: 48px 10% 48px 10%; 
+    background-color: #1B4674;
+}
+
+.copyright.konten {
+    background-color: #ffffff00;
+    background-image: url("../images/batik.png");
+    background-size: cover;
+}
+
+.copyright p {
+    color: #1C4677;
+    font-size: 14px;
+}
+
+a.copyright-link {
+    color: #1C4677 !important;
+    font-size: 14px !important;
+    text-decoration: none;
+}
+
+.copyright-logos {
+    max-width: 80px;
+}
+.content-title {
+    font-weight: bolder !important;
+    color: #1B4674;
+    margin-bottom: 14px;
+}
+.content-sub-title {
+    color: #75C6EF;
+    font-weight: 600;
+    font-size: 16px;
+}
+#room-tour .modal-dialog .modal-content .modal-header{ background-color: #ffffff; }
+#room-tour .modal-dialog .modal-content .modal-header .modal-title{ color: #1B4674; }
+@media (max-width: 575px) {
+    .konten {
+        padding: 48px 5% 48px 5%; 
+        background-color: #1B4674;
+    }
+    .navbar-nav a.btn.btn-primary {         
+        margin: 0 !important;
+        display: flex;
+        align-items: center;
+        color: #575757 !important;
+        font-weight: 600; 
+        background-color: #FCE8CE !important;
+        border: none;
+        border-radius: 40px;
+        font-size: 14px !important;    
+    } 
+    nav {
+        padding: 40px 10px 40px 10px;    
+    }
+    #contact #desc p { width: 100%; color: #1B4674; font-weight: 600; font-size: 12px; margin-bottom: 0 !important;}    
+    footer #contact {
+        width: 100%;        
+        padding: 48px 5% 48px 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #FEF8F0;
+    }
+    footer hr { width: 90%; }
+}
+
+@media (max-width: 1199.98px) {
+    .konten {
+        padding: 48px 8% 48px 8%; 
+        background-color: #1B4674;
+    }
+    .navbar-nav a.btn.btn-primary { 
+        margin: 0 !important;
+        display: flex;
+        align-items: center;
+        color: #575757 !important;
+        font-weight: 600; 
+        background-color: #FCE8CE !important;
+        border: none;
+        border-radius: 40px;
+        font-size: 14px !important;    
+    }  
+    .nav-link {
+        font-size: 14px !important;
+        font-weight: 600;
+        margin: 0 5px 0 5px;
+        color: #575757 !important;        
+    }
+    footer #contact {        
+        padding: 48px 8% 48px 8%;
+        justify-content: space-between;
+        background-color: #FEF8F0;        
+    }
+    footer hr { width: 84%; }
+}
