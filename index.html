@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./assets/bootstrap-5.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- alpine js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- homepagecss -->
     <link rel="stylesheet" href="./assets/style/homepage.css">
 </head>
@@ -21,17 +23,20 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" href="./index.html">Home</a>
-                    <a class="nav-link" href="./our-services.html">Our Services</a>
-                    <a class="nav-link" href="#">Our Room</a>
-                    <a class="nav-link" href="#">Gallery</a>
-                    <a class="nav-link" href="#">Links</a>
-                    <a class="btn btn-primary" href="#" role="button">Contact Us</a>
-                </div>
+                <div class="navbar-nav ms-auto" x-data="navLinks()">
+                    <template x-for="link in links">
+                      <a :class="link.name == active ? 'nav-link active' : 'nav-link'"
+                        x-bind:href="link.url"
+                        x-text="link.name"
+                        @click="localStorage.setItem('active', link.name)"
+                      >
+                      </a>                      
+                    </template>                    
+                    <a class="btn btn-primary" href="#" role="button">Contact Us</a>                    
+                </div>             
             </div>
         </div>
-    </nav>
+    </nav>    
     <!-- hero -->
     <section id="hero-homepage" class="konten container-fluid text-white">
         <div class="row align-items-center py-5">          
@@ -168,7 +173,7 @@
           Browse near hotel from Melinda Hospital
         </a>
       </div>
-    </div>
+    </div>    
     <!-- footer -->
     <footer>
         <!-- contact -->
@@ -311,6 +316,8 @@
           </div>
         </footer>
     </div> -->
+    <!-- alpine js component TARUH DISINI! -->    
+    <script src="./scripts/navbar.js"></script>
     <script src="./assets/bootstrap-5.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
