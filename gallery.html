@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./assets/bootstrap-5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- alpine js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- ourroom.css -->
+    <link rel="stylesheet" href="./assets/style/gallery.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto" x-data="navLinks()">
+                  <template x-for="link in links">
+                    <a :class="link.name == active ? 'nav-link active' : 'nav-link'"
+                      x-bind:href="link.url"
+                      x-text="link.name"
+                      @click="localStorage.setItem('active', link.name)"
+                    >
+                    </a>                      
+                  </template>
+                  <a class="btn btn-primary" href="#" role="button">Contact Us</a>                    
+              </div>                
+            </div>
+        </div>
+    </nav>
+    <section class="container d-flex justify-content-center flex-column gallery-hero">
+        <span class="content-sub-title text-center">Melinda Hospital Gallery</span>
+        <h1 class="content-title text-center">We adapt Modern and Comfort Place</h1>
+        <p class="text-center gallery-desc">
+            Health is the main key to a woman's beauty and happiness. Melinda Hospital is sincerely committed to realizing every woman's dream to look beautiful, healthy and happy.
+        </p>
+    </section>
+    <section class="py-5 background-cream">
+        <div class="d-flex justify-content-center gap-2">
+            <img src="./assets/images/mouse-icon.png" alt="mouse-icon" class="mouse img-fluid">
+            <p class="my-auto">Scroll to bottom</p>
+        </div>
+        <div class="container row py-5 mx-auto">
+            <div class="col-sm-6 my-4 py-md-0">
+                <img src="./assets/images/gallery-hero-1.png" alt="gallery-img" class="img-fluid">
+            </div>
+            <div class="col-sm-6 pl-4 pl-md-0 align-self-center my-4 py-md-0">
+                <span class="content-sub-title">Melinda Hospital Gallery</span>
+                <h1 class="content-title">Story in Every Place</h1>
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
+                </p>
+                <a href="#" class="btn btn-light">View Gallery</a>
+            </div>
+        </div>
+        <div class="container row py-5 mx-auto">
+            <div class="col-sm-6 pl-4 pl-md-0 align-self-center my-4 py-md-0">
+                <span class="content-sub-title">Melinda Hospital Gallery</span>
+                <h1 class="content-title">Beautiful Smile of Babbies</h1>
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                </p>
+                <a href="#" class="btn btn-light">View Gallery</a>
+            </div>
+            <div class="col-sm-6 my-4 py-md-0">
+                <img src="./assets/images/gallery-hero-2.png" alt="gallery-img" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #1B4674" class="container-fluid konten row mx-0">
+        <div class="col-sm-6 mb-5 mb-md-0">
+            <img src="./assets/images/galler-hero-3.png" alt="services" class="img-fluid" style="object-fit: cover;">
+        </div>        
+        <div class="col-sm-6 my-auto">
+            <span class="content-sub-title">Melinda Hospital Gallery</span>
+            <h1 class="content-title text-white">Doctor and Nurses</h1>
+            <p class="text-white">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+            </p>
+            <a href="#" class="btn btn-light">View Gallery</a>
+        </div>
+    </section>
+    <footer>
+        <!-- contact -->
+        <div id="contact" class="row">
+            <div id="desc" class="col-sm-8 d-flex flex-column flex-xl-row">
+                <div class="photo-contact">
+                    <img src="./assets/images/contact.png" alt="contact" id="contact-img">
+                    <img src="./assets/images/person.png" alt="person" id="person-img">
+                </div>
+                <p>
+                    Please feel free to contact our friendly reception staff with any medical enquiry, or call (022) 4233777
+                </p>
+            </div>
+            <span id="contacts" class="col-sm-4 mt-4 mt-xl-0 d-flex align-items-center gap-3 justify-content-center">
+                <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+                <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
+                <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                <a class="btn btn-primary d-flex align-items-center gap-3" href="#">
+                    Pendaftaran <i class="bi bi-arrow-right-short fs-4"></i>
+                </a>
+           </span>
+        </div>
+        <!-- footer content -->
+        <div class="footer-konten container-fluid konten py-5 row gap-5 gap-md-0">
+          <div class="col-sm-6">
+            <img src="./assets/images/logo.png" class="logo-footer img-fluid" alt="logo-footer">
+          </div>
+          <div class="col-sm-3 footer-konten-text">
+            <span class="footer-title">Office</span>
+            <div class="my-2"></div>
+            <p>Jl.Pajajaran 46, Bandung Jawa Barat Indonesia</p>
+          </div>
+          <div class="col-sm-3 footer-konten-text">
+            <span class="footer-title">Contact</span>
+            <div class="my-2"></div>
+            <p>
+              Hunting  : (022) 4222788
+              Pendaftaran : (022) 4209088
+              Fax       : (022) 4215700
+            </p>
+          </div>
+        </div>
+        <hr class="mx-auto">
+        <div class="footer-konten container-fluid konten py-5 row gap-5 gap-md-0">
+          <div class="col-sm-6 footer-konten-text">            
+            <span class="footer-title">Our Good Services</span>
+            <div class="my-2"></div>
+            <p class="d-flex flex-column gap-1">
+              <a href="#" class="menu-map">Babycare</a>
+              <a href="#" class="menu-map">Mothercare</a>
+              <a href="#" class="menu-map">General Facility</a>
+            </p>            
+          </div>
+          <div class="col-sm-3 footer-konten-text">            
+            <span class="footer-title">For Doctors</span>
+            <div class="my-2"></div>
+            <p class="d-flex flex-column gap-1">
+              <a href="#" class="menu-map">Careers <span class="badge-career badge rounded-pill bg-primary">hiring now</span></a>
+              <a href="#" class="menu-map">Forum Doctor</a>              
+            </p>
+            <div class="my-4"></div>
+            <span class="footer-title">For Patients</span>
+            <div class="my-2"></div>
+            <p class="d-flex flex-column gap-1">
+              <a href="#" class="menu-map">Bank Appointments</a>
+              <a href="#" class="menu-map">Find a Doctor</a>              
+            </p>            
+          </div>
+          <div class="col-sm-3 footer-konten-text">
+            <span class="footer-title">Patients</span>
+            <div class="my-2"></div>
+            <p class="d-flex flex-column gap-1">
+              <a href="#" class="menu-map">Health Blogs</a>
+              <a href="#" class="menu-map">Open & Shops</a>
+              <a href="#" class="menu-map">Licenting & Terms</a>
+              <a href="#" class="menu-map">
+                Technology
+              </a>                                                        
+            </p>
+            <div class="my-4"></div>
+            <label for="subs-email" class="footer title">Subscribe Our Newsletter</label>
+            <input type="email" class="form-control" id="subs-email">
+            <a href="#" class="send-email-sub rounded-pill mt-2 btn btn-sm btn-primary">Send <i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center konten copyright">
+          <p>© 2022 RS Melinda 2, All Rights Reserved. </p>
+          <div class="d-flex gap-4">
+            <img src="./assets/images/logos-footer.png" class="copyright-logos img-fluid">
+            <a href="#" class="copyright-link">Privacy & Policy</a>
+            <a href="#" class="copyright-link">Cookies</a>
+          </div>
+        </div>
+    </footer>
+    <!-- alpine js component TARUH DISINI! -->
+    <script src="./scripts/navbar.js"></script>
+    <script src="./assets/bootstrap-5.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
