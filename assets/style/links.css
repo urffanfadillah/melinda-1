@@ -1,0 +1,103 @@
+.konten {
+    padding: 48px 10% 48px 10%;     
+}
+
+.background-cream {
+    background-color: #FDF4E9;
+}
+p.fw-light {
+    line-height: 150%;
+    color: #575757;
+}
+#hero-images-homepage {
+    width: 50%;    
+    display: block;    
+}
+
+.wrapper-hero-img {
+    margin-top: -30%;
+    z-index: 998;
+    display: flex;
+    justify-content: end;    
+}
+
+.mouse {
+    width: 34px;
+}
+
+.bg-img-1 {
+    height: 460px;
+    background-image: url("../images/melinda-1.png");
+    background-size: cover;
+    object-fit: cover;    
+}
+
+.bg-img-2 {
+    height: 460px;
+    background-image: url("../images/melinda-2.png");
+    background-size: cover;
+    object-fit: cover;    
+}
+
+.bg-img-3 {
+    height: 460px;
+    background-image: url("../images/melinda-3.png");
+    background-size: cover;
+    object-fit: cover;    
+}
+
+.bg-img-1 p, .bg-img-2 p {
+    color: white !important;
+    z-index: 1000;
+    filter: brightness(100%) !important;
+}
+
+.links-desc {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.card-link {
+    position: relative;
+}
+
+.card-link-body {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.card-link-body p {
+    color: white;
+    width: 100% !important;
+    font-size: 20px;
+    font-weight: bold !important;    
+}
+
+.links-hero { padding: 80px 0 80px 0; }
+
+@media (max-width: 575px) {
+    .wrapper-hero-img {
+        margin-top: 0;
+        z-index: 0;
+        display: none;
+        justify-content: end;    
+    }
+    .links-desc {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .wrapper-hero-img {
+        margin-top: 0;
+        z-index: 0;
+        display: flex;
+        justify-content: end;    
+    }
+    .links-desc {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
